@@ -1,0 +1,18 @@
+{
+    "catalogs": [{
+        "path": "src/locales/{locale}",
+        "include": ["<rootDir>/src"]
+    }],
+    "fallbackLocales": {
+        "default": "en-US"
+    },
+    "format": "po",
+    "formatOptions": {
+        "lineNumbers": false
+    },
+    "sourceLocale": "en",
+    "locales": ["en"],
+    "orderBy": "messageId",
+    "pseudoLocale": "pseudo",
+    "rootDir": "."
+}
