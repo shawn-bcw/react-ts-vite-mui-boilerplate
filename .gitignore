@@ -4,6 +4,12 @@ dist
 dist-ssr
 *.local
 
+# Lingui
+# Run `npm run i18n:compile` before running app for the first time
+/src/locales/**/en-US.ts
+/src/locales/**/en-US.d.ts
+/src/locales/**/pseudo.*
+
 # Logs
 logs
 *.log

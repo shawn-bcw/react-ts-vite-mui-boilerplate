@@ -20,7 +20,7 @@
         ".env.*",
         ".vscode/",
         "package-lock.json",
-        "reactBabelRefresh.js"
+        "reactBabelRefreshPlugin.js"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {

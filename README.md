@@ -5,12 +5,25 @@ A simple boilerplate loaded with a few bleeding-edge packages, a new bundler cal
 - Environmental variables are configured for Vite, located in `/env`
 - ESLint & Prettier have been set up for code consistency
 - Assets should only be included in `/src/assets`
+- LinguiJS for multilingual support
+
+
+## Commands:
+
+**Always run `npm run i18n:compile` before running app for the first time**
+
+- `npm run start:[dev|staging|prod]`
+- `npm run build:[dev|staging|prod]`
+- `npm run i18n:extract`
+- `npm run i18n:compile`
+
 
 Useful Docs:
 
 - **[ESLint](https://eslint.org/docs/rules/)**
 - [Immer](https://immerjs.github.io/immer/)
 - [LinguiJS](https://lingui.js.org/)
+    - **Run `npm run i18n:compile` before running app for the first time**
     - [make-plural](https://github.com/eemeli/make-plural/tree/master/packages/plurals)
 - **[MUI v5](https://mui.com/)**
 - [polished](https://polished.js.org/docs/)
