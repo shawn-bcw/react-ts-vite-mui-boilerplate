@@ -7,6 +7,7 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react-hooks/recommended",
+        "plugin:putout/safe",
         "prettier"
     ],
     "ignorePatterns": [
@@ -30,8 +31,19 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "plugins": ["simple-import-sort", "unused-imports", "@typescript-eslint"],
+    "plugins": [
+        "simple-import-sort", 
+        "unused-imports", 
+        "@typescript-eslint", 
+        "putout", 
+        "import"
+    ],
     "rules": {
+        "brace-style": [ "error", "1tbs", { "allowSingleLine": true } ],
+        "function-call-argument-newline": [ "error", "consistent" ],
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error",
         "linebreak-style": ["error", "unix"],
         "no-duplicate-imports": "error",
         "no-restricted-imports": [
@@ -55,7 +67,24 @@
                 ]
             }
         ],
+        "no-trailing-spaces": "error",
+        // ⬇️ WARNING: subject to change
+        "object-curly-newline": [
+            "error",
+            {
+                "ImportDeclaration": { "multiline": true },
+                "ExportDeclaration": "always",
+                "ObjectExpression": { "multiline": true, "minProperties": 2 },
+                "ObjectPattern": { "multiline": true }
+            }
+        ],
         "object-curly-spacing": ["error", "always"],
+        "object-property-newline": [
+            "error",
+            {
+                "allowAllPropertiesOnSameLine": true
+            }
+        ],
         "object-shorthand": ["error", "always"],
         "prefer-destructuring": [
             "error",
@@ -67,6 +96,16 @@
                 "enforceForRenamedProperties": false
             }
         ],
+        "putout/destructuring-as-function-argument": "warn",
+        "putout/multiple-properties-destructuring": [
+            "error",
+            {
+                "minProperties": 3
+            }
+        ],
+        "quote-props": [ "error", "as-needed" ],
+        "react/jsx-closing-bracket-location": "error",
+        "react/jsx-first-prop-new-line": 2,
         "react/jsx-sort-props": [
             2,
             {
@@ -75,6 +114,12 @@
                 "ignoreCase": true,
                 "noSortAlphabetically": true,
                 "reservedFirst": ["key", "ref"]
+            }
+        ],
+        "react/jsx-max-props-per-line": [
+            1,
+            {
+                "when": "multiline"
             }
         ],
         "react/react-in-jsx-scope": "off",
