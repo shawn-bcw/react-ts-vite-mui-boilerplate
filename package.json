@@ -1,6 +1,6 @@
 {
-  "name": "archaia",
-  "version": "0.0.0",
+  "name": "react-ts-vite-mui-boilerplate",
+  "version": "0.0.1",
   "scripts": {
     "start:dev": "vite --mode dev",
     "start:staging": "vite --mode staging",
@@ -9,9 +9,7 @@
     "build:staging": "tsc && vite build --mode staging",
     "build:prod": "tsc && vite build --mode prod",
     "preview": "vite preview",
-    "i18n:extract": "lingui extract --locale en-US",
-    "i18n:compile": "npm run i18n:extract && lingui compile",
-    "clean": "rm -rf dist/ node_modules/ src/locales/*.ts src/locales/pseudo.*"
+    "clean": "rm -rf dist/ node_modules/"
   },
   "eslintConfig": {
     "extends": [
@@ -23,10 +21,6 @@
     "@babel/core": "^7.13.10",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
-    "@lingui/cli": "^3.13.2",
-    "@lingui/detect-locale": "^3.13.2",
-    "@lingui/macro": "^3.13.2",
-    "@lingui/react": "^3.13.2",
     "@mui/icons-material": "^5.3.1",
     "@mui/lab": "^5.0.0-alpha.66",
     "@mui/material": "^5.3.1",
@@ -39,8 +33,8 @@
     "react-router-dom": "^6.2.1",
     "react-virtualized-auto-sizer": "^1.0.6",
     "react-window": "^1.8.6",
-    "recoil": "^0.5.1",
-    "recoil-persist": "^4.0.0"
+    "recoil": "^0.6.1",
+    "recoil-persist": "^4.1.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.16.7",
@@ -65,15 +59,14 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-import-quotes": "^0.0.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-putout": "^13.11.0",
+    "eslint-plugin-putout": "^14.7.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "inter-ui": "^3.19.3",
-    "putout": "^24.6.0",
+    "putout": "^25.13.1",
     "qs": "^6.10.3",
-    "rollup-plugin-typescript2": "^0.31.2",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5",
     "vite": "^2.7.2",

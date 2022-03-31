@@ -7,7 +7,7 @@
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
         "plugin:react-hooks/recommended",
-        "plugin:putout/safe",
+        "plugin:putout/recommended",
         "prettier"
     ],
     "ignorePatterns": [
@@ -103,6 +103,7 @@
                 "minProperties": 3
             }
         ],
+        "putout/object-init": "off",
         "quote-props": [ "error", "as-needed" ],
         "react/jsx-closing-bracket-location": "error",
         "react/jsx-first-prop-new-line": 2,
