@@ -47,6 +47,7 @@
         "import/no-duplicates": "error",
         "linebreak-style": ["error", "unix"],
         "no-duplicate-imports": "error",
+        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0 }],
         "no-restricted-imports": [
             "error",
             {
@@ -107,6 +108,13 @@
         ],
         "putout/objects-braces-inside-array": "off",
         "putout/object-init": "off",
+        "putout/putout": ["error", {
+            "rules": {
+                "remove-console": "off",
+                "remove-useless-variables/destruct": "off",
+                "remove-unused-variables": "off"
+            }
+        }],
         "quote-props": [ "error", "as-needed" ],
         "react/jsx-closing-bracket-location": "error",
         "react/jsx-first-prop-new-line": 2,

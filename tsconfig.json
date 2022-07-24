@@ -2,7 +2,15 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@/*": ["./*"],
+      "@assets/*": ["./assets/*"],
+      "@atoms/*": ["./atoms/*"],
+      "@componens/*": ["./components/*"],
+      "@constants/*": ["./constants/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@pages/*": ["./pages/*"],
+      "@providers/*": ["./providers/*"],
+      "@types/*": ["./types/*"],
+      "@utils/*": ["./utils/*"],
     },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
